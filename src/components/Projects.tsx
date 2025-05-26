@@ -6,34 +6,50 @@ import { Github, Link } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Personal Recipe App",
-      description: "A responsive web app for storing and organizing favorite recipes. Built with HTML, CSS, and JavaScript featuring local storage functionality.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
-      technologies: ["HTML5", "CSS3", "JavaScript", "Local Storage"],
-      githubUrl: "#",
-      liveUrl: "#"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "An interactive weather application that displays current conditions and forecasts. Responsive design with dark/light mode toggle.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-      technologies: ["JavaScript", "Weather API", "CSS Grid", "Responsive Design"],
-      githubUrl: "#",
-      liveUrl: "#"
-    },
-    {
       title: "Portfolio Website",
-      description: "A modern, responsive portfolio website showcasing my projects and skills. Built with React and styled with Tailwind CSS.",
+      description: "A personal portfolio website showcasing my projects and skills. Built with modern web technologies.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
-      technologies: ["React", "Tailwind CSS", "TypeScript", "Responsive Design"],
+      technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
       githubUrl: "#",
       liveUrl: "#"
     },
     {
-      title: "Todo List Manager",
-      description: "A feature-rich todo application with drag-and-drop functionality, categories, and progress tracking. Clean and intuitive user interface.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
-      technologies: ["React", "CSS3", "Local Storage", "Drag & Drop API"],
+      title: "Calculator",
+      description: "An interactive calculator application with a clean user interface and standard mathematical operations.",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop",
+      technologies: ["JavaScript", "HTML5", "CSS3", "DOM Manipulation"],
+      githubUrl: "#",
+      liveUrl: "#"
+    },
+    {
+      title: "Interactive Games",
+      description: "Collection of interactive web games demonstrating JavaScript programming skills and game logic.",
+      image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=400&fit=crop",
+      technologies: ["JavaScript", "Canvas API", "CSS3", "Game Logic"],
+      githubUrl: "#",
+      liveUrl: "#"
+    },
+    {
+      title: "Login & Signup Authentication System",
+      description: "A secure authentication system with user registration and login functionality.",
+      image: "https://images.unsplash.com/photo-1555421689-d68471e189f2?w=600&h=400&fit=crop",
+      technologies: ["PHP", "MySQL", "HTML", "CSS", "Security"],
+      githubUrl: "#",
+      liveUrl: "#"
+    },
+    {
+      title: "To-Do-List App",
+      description: "A task management application with add, edit, delete functionality and local storage.",
+      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
+      technologies: ["JavaScript", "Local Storage", "DOM", "CSS3"],
+      githubUrl: "#",
+      liveUrl: "#"
+    },
+    {
+      title: "Weather App",
+      description: "A weather application that displays current weather conditions and forecasts.",
+      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
+      technologies: ["JavaScript", "API Integration", "CSS", "Responsive"],
       githubUrl: "#",
       liveUrl: "#"
     }
@@ -45,11 +61,11 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">My Projects</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Here are some projects I've been working on to practice and showcase my front-end development skills.
+            Here are some projects I've worked on to demonstrate my front-end development skills.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card 
               key={project.title}
@@ -66,39 +82,39 @@ const Projects = () => {
               </div>
               
               <CardHeader>
-                <CardTitle className="text-xl text-gray-800">{project.title}</CardTitle>
-                <CardDescription className="text-gray-600 leading-relaxed">
+                <CardTitle className="text-lg text-gray-800">{project.title}</CardTitle>
+                <CardDescription className="text-gray-600 leading-relaxed text-sm">
                   {project.description}
                 </CardDescription>
               </CardHeader>
               
               <CardContent>
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
                     <span 
                       key={tech}
-                      className="bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
+                      className="bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
                 
-                <div className="flex gap-3">
+                <div className="flex gap-2">
                   <Button 
                     variant="outline" 
                     size="sm"
-                    className="flex items-center gap-2 hover:bg-gray-50"
+                    className="flex items-center gap-2 hover:bg-gray-50 flex-1"
                   >
                     <Github className="w-4 h-4" />
                     Code
                   </Button>
                   <Button 
                     size="sm"
-                    className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
+                    className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 flex-1"
                   >
                     <Link className="w-4 h-4" />
-                    Live Demo
+                    Demo
                   </Button>
                 </div>
               </CardContent>

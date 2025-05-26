@@ -4,19 +4,19 @@ import { Code, LayoutDashboard, Laptop } from "lucide-react";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Languages",
+      title: "Programming Languages",
       icon: <Code className="w-6 h-6" />,
-      skills: ["HTML5", "CSS3", "JavaScript", "TypeScript"]
+      skills: ["C and C++", "Python", "Java", "HTML", "CSS", "JavaScript", "PHP"]
     },
     {
-      title: "Frameworks & Libraries",
+      title: "Technologies & Tools",
       icon: <LayoutDashboard className="w-6 h-6" />,
-      skills: ["React", "Tailwind CSS", "Bootstrap", "Vite"]
+      skills: ["Cloud Foundation", "Linux Commands", "SQL", "MySQL", "MongoDB"]
     },
     {
-      title: "Tools & Platforms",
+      title: "Soft Skills",
       icon: <Laptop className="w-6 h-6" />,
-      skills: ["Git & GitHub", "VS Code", "Figma", "Chrome DevTools"]
+      skills: ["Problem Solving", "Public Speaking", "Cyber Security", "Web Development"]
     }
   ];
 
@@ -26,7 +26,7 @@ const Skills = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">My Skills</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Here are the technologies and tools I'm learning and working with to build modern web applications.
+            Here are the technologies and tools I work with to build modern web applications.
           </p>
         </div>
         

@@ -7,12 +7,17 @@ const Contact = () => {
   const contactInfo = [
     {
       label: "Email",
-      value: "alex.chen.dev@email.com",
-      href: "mailto:alex.chen.dev@email.com"
+      value: "thotapallavi2004@gmail.com",
+      href: "mailto:thotapallavi2004@gmail.com"
+    },
+    {
+      label: "Phone",
+      value: "7989766564",
+      href: "tel:7989766564"
     },
     {
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Gajuwaka, Visakhapatnam, 530012, INDIA",
       href: null
     }
   ];
@@ -73,7 +78,7 @@ const Contact = () => {
               <div className="mt-8">
                 <Button 
                   className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white transition-all duration-300"
-                  onClick={() => window.location.href = 'mailto:alex.chen.dev@email.com'}
+                  onClick={() => window.location.href = 'mailto:thotapallavi2004@gmail.com'}
                 >
                   Send Me an Email
                 </Button>
@@ -110,7 +115,7 @@ const Contact = () => {
             Thank you for taking the time to view my portfolio!
           </p>
           <p className="text-sm text-gray-500">
-            Built with React, TypeScript, and Tailwind CSS
+            Built with HTML, CSS, JavaScript and modern web technologies
           </p>
         </div>
       </div>

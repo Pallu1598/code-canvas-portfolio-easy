@@ -27,16 +27,17 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
-            Hi, I'm Alex Chen
+            Hi, I'm Thota Pallavi
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-4">
-            Aspiring Front-End Developer
+            Front End Developer
           </p>
           
           <p className="text-lg text-gray-500 mb-8 max-w-2xl mx-auto leading-relaxed">
-            I'm passionate about creating beautiful, user-friendly websites and applications. 
-            Currently learning modern web technologies and building exciting projects to grow my skills.
+            I am a qualified Frontend Developer with a strong grasp of HTML, CSS, JavaScript, and Python, 
+            complemented by hands-on experience through internship projects such as personal portfolio, 
+            calculator, and interactive games.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
